@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-content">
+        <form id="carRpaForm">
+            <h1>California Residential Purchase Agreement Form</h1>
+            
+            <h3>When was this form filled out?</h3>
+            <label for="formDate">Date Prepared:</label>
+            <input type="text" id="formDate" name="formDate" placeholder="mm/dd/yyyy"><br><br>
+            
+            <h3>The party making the offer to purchase the property("Buyer").</h3>
+            <label for="buyerName">This is an offer from:</label>
+            <input type="text" id="buyerName" name="buyerName" placeholder="John Doe"><br><br>
+            
+            <h3>The description of the property that the buyer intends to acquire.</h3>
+            <label for="propertyDescription">The real property to be acquired is: </label>
+            <input type="text" id="propertyDescription" name="propertyDescription"><br><br>
+
+            <h3>The location of the property.</h3>
+            <input type="text" id="propertyAddress" name="propertyAddress" placeholder="123 Main Street, Apartment 4B"> The street address of the property.<br><br>
+            <input type="text" id="propertyCity" name="propertyCity" placeholder="California City"> The city where the property is located.<br><br>
+            <input type="text" id="propertyCounty" name="propertyCounty" placeholder="Alameda"> The county where the property is located.<br><br>
+            <input type="text" id="propertyZip" name="propertyZip" placeholder="12345"> The zip code of the property.<br><br>
+
+            <h3>The Assessor's Parcel Number assigned to the property by the county assessor's office.</h3>
+            <label for="assessorParcel">Assessor's Parcel No.</label>
+            <input type="text" id="assessorParcel" name="assessorParcel" placeholder="012345678000"><br><br>
+
+            <h3>The amount the buyer is offering to pay.</h3>
+            <label for="buyerOffer">The purchase price offered: $</label>
+            <input type="text" id="buyerOffer" name="buyerOffer" placeholder="000,000"><br><br>
+
+            <h3>The date when the escrow process will be completed.</h3>
+            <p>If you prefer to set a certain number of days after the seller accepts the offer, indicate the number of days.</p>
+            <label for="escrowDate">Date:</label>
+            <input type="text" id="escrowDate" name="escrowDate" placeholder="mm/dd/yyyy"> or <input type="text" id="escrowDateDays" name="escrowDateDays" placeholder="0">(days)<br><br>
+
+            <h3>Disclosure:</h3>
+            <p>Both the buyer and seller confirm that they have received and reviewed the Disclosure Regarding Real Estate Agency Relationships form.</p>
+            <input type="checkbox" value="no" id="disclosureBox" name="disclosureBox"><br><br>
+
+            <h3>Listing Agent:</h3>
+            <input type="text" id="listingAgent" name="listingAgent" placeholder="ABC Realty">(Print Firm Name)
+
+            <h3>Which best describes the agency relationship?</h3>
+            <p>The firm is the agent of:(check one)</p>
+            <input type="checkbox" value="no" id="listingExclusive" name="listingExclusive"> The Seller Exclusively<br><br>
+            <input type="checkbox" value="no" id="listingBS" name="listingBS"> Both the Buyer and Seller<br><br>
+
+            <h3>Selling Agent:</h3>
+            <input type="text" id="sellingAgent" name="sellingAgent" placeholder="ABC Realty">(Print Firm Name)(if not the same as the Listing Agent)
+
+            <h3>Which best describes the agency relationship?</h3>
+            <p>The firm is the agent of:(check one)</p>
+            <input type="checkbox" value="no" id="sellingBuyer" name="sellingBuyer"> The Buyer Exclusively<br><br>
+            <input type="checkbox" value="no" id="sellingExclusive" name="sellingExclusive"> The Seller Exclusively<br><br>
+            <input type="checkbox" value="no" id="sellingBS" name="sellingBS"> Both the Buyer and Seller<br><br>
+
+            <h3>Potentially Competing Buyers and Sellers:</h3>
+            <p>The parties involved each acknowledge receipt of a "Possible Representation of More than One Buyer or Seller - Disclosure and Content" (C.A.R. Form PRBS).</p>
+            <input type="checkbox" value="no" id="competingBS" name="competingBS"><br><br>
+
+            <h3>Please look over the following payment options carefully and choose the answer choices corresponding to the correct one.</h3>
+            <h4>The choices are: Initial Deposit, Increased Deposit, All Cash Offer, and Loan(s).</h4><br>
+
+            <h3>A. Initial Deposit:</h3>
+            <label>Deposit shall be in the amount of: $</label>
+            <input type="text" id="initialDeposit" name="initialDeposit" placeholder="000,000"><br><br>
+
+            <p>Please choose <strong>one</strong> option under <strong>Buyer Direct Deposit</strong> or <strong>Buyer Deposit with Agent</strong></p>
+
+            <h4>(1)Buyer Direct Deposit</h4>
+            <p>Buyer shall deliver deposit directly to Escrow Holder by:</p>
+            <input type="checkbox" value="no" id="electronicDD" name="electronicDD"> Electronic Funds Transfer<br><br>
+            <input type="checkbox" value="no" id="cashierDD" name="cashierDD"> Cashier's Check<br><br>
+            <input type="checkbox" value="no" id="personalDD" name="personalDD"> Personal Check<br><br>
+            <input type="text" id="otherDD" name="otherDD" placeholder=""> Other<br><br>
+
+            <p>-Within 3 business days after acceptance or:</p>
+            <input type="text" id="alttimelineDD" name="alttimelineDD"> (alternative timeline)<br><br>
+
+            <p>---------------------------------------------------The Form Should Not Work Past This Point, Submit to See PDF----------------------------------------------------------</p>
+
+            <h4>(2)Buyer Deposit With Agent</h4>
+            <p>-Buyer has given the deposit by personal check or:</p>
+            <input type="text"> (Check Type)<br><br>
+
+            <p>-To the agent submitting the offer or to:</p>
+            <input type="text"> (Choice of Recipient)<br><br>
+
+            <p>The check should be made payable to the specified real estate brokerage or company.</p>
+            <input type="text"> (Payee)<br><br>
+
+            <p>The deposit shall be held uncashed until Acceptance and then deposited with Escrow Holder within 3 days after Acceptance or:</p>
+            <input type="text"> (alternative timeline)<br><br>
+
+            <p>Deposit checks given to agent shall be an original signed check and <strong>not</strong> a copy.</p>
+            <p>(Note: Initial and Increased deposit checks received by agent shall be recorded in Broker's trust fund log.)</p>
+
+            <h3>B. Increased Deposit:</h3>
+            <label>Deposit shall be in the amount of: $</label>
+            <input type="text"><br><br>
+
+            <h4>Within how many days after acceptance?</h4>
+            <label>Days:</label>
+            <input type="text"><br><br>
+
+            <h4>Or:</h4>
+            <label>Specify a specific date:</label>
+            <input type="text"><br><br>
+
+            <h3>C. All Cash Offer:</h3>
+            <p>This offer is <strong>NOT</strong> contingent on Buyer obtaining a loan.</p>
+            <label>All Cash Offer:</label>
+            <input type="checkbox" value="no">
+
+            <h4>(1) Written verification of sufficient funds is attached to this offer?</h4>
+            <input type="checkbox" value="no">
+
+            <h4>(2) Or Buyer shall deliver verification within <strong>3</strong> business days after Acceptance.</h4>
+            <input type="checkbox" value="no"><br><br>
+
+            <h4>(3) Or Buyer shall deliver verification within <strong>specific</strong> amount of days after Acceptance.</h4>
+            <input type="text"><br><br>
+
+            <h3>D. Loan(s)</h3>
+            <p>There are three potential loans to choose from, only choose the answers that align with <strong>one</strong> of them.</p>
+
+            <h4>(1) First Loan:</h4>
+            <label>In the amount of: $</label>
+            <input type="text"><br><br>
+
+            <p>This loan will be:</p>
+            <input type="checkbox" value="no">Conventional Financing<br><br>
+            <input type="checkbox" value="no">FHA<br><br>
+            <input type="checkbox" value="no">VA<br><br>
+            <input type="checkbox" value="no">Seller Financing(C.A.R. Form SFA)<br><br>
+            <input type="checkbox" value="no">Assumed Financing(C.A.R. Form SFA)<br><br>
+            <input type="text">Other<br><br>
+
+            <p>This loan shall be at a fixed rate not to exceed <input type="text">%,</p>
+            <p>or an adjustable rate loan with an initial rate not to exceed <input type="text">%.</p>
+            <p>Regardless of the type of loan, Buyer shall pay points not to exceed <input type="text">% of the loan amount.</p>
+
+            <h4>(2) Second Loan:</h4>
+            <label>In the amount of: $</label>
+            <input type="text"><br><br>
+
+            <p>This loan will be:</p>
+            <input type="checkbox" value="no">Conventional Financing<br><br>
+            <input type="checkbox" value="no">Seller Financing(C.A.R. Form SFA)<br><br>
+            <input type="checkbox" value="no">Assumed Financing(C.A.R. Form SFA)<br><br>
+            <input type="text">Other<br><br>
+
+            <p>This loan shall be at a fixed rate not to exceed <input type="text">%,</p>
+            <p>or an adjustable rate loan with an initial rate not to exceed <input type="text">%.</p>
+            <p>Regardless of the type of loan, Buyer shall pay points not to exceed <input type="text">% of the loan amount.</p>
+
+            <h4>(3) FHA/VA:</h4>
+            <p>For any FHA or VA loan specified in 3D(1), Buyer has <strong>17 (or <input type="text">) Days</strong> after Acceptance to Deliver to Seller written notice notice of any lender required repairs or costs that
+            Buyer requests Seller to pay for or otherwise correct.</p>
+
+            <h3>Balance of Down Payment or Purchase Price:</h3>
+            <label>In the amount of: $</label>
+            <input type="text"><br><br>
+
+            <h3>Purchase Price (Total):</h3>
+            <label>$</label>
+            <input type="text"><br><br>
+
+            <label>Buyer's Initials</label>
+            (<input type="text">)(<input type="text">)<br><br>
+
+            <label>Seller's Initials</label>
+            (<input type="text">)(<input type="text">)<br><br>
+
+
+
+
+            <!-- The Submit Button -->
+            <button type="button" onclick="generatePDF()">Download PDF</button>
+        </form>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
